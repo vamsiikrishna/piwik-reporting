@@ -1,0 +1,31 @@
+{
+    "name": "sockam/piwik-reporting",
+    "type": "library",
+    "description": "PHP client for getting reports from Piwik",
+    "keywords": ["piwik"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Vamsi Krishna B",
+            "email": "vamsi@fastmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.0",
+        "guzzlehttp/guzzle": "~6.0"
+    },
+    "require-dev": {
+        "fabpot/php-cs-fixer": "^1.9",
+        "phpunit/phpunit" : "^4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Sockam\\PiwikReporting\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Sockam\\PiwikReporting\\Test\\": "test"
+        }
+    }
+}
