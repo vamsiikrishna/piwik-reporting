@@ -20,12 +20,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Sockam\\PiwikReporting\\": "src"
+            "Sockam\\PiwikReporting\\": "src/Sockam/piwik-reporting"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Sockam\\PiwikReporting\\Test\\": "test"
+            "Sockam\\PiwikReporting\\Test\\": "src/Sockam/piwik-reporting/test"
         }
     }
 }

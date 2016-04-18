@@ -9,9 +9,14 @@ class HttpConnection implements ConnectionInterface
     private $guzzle;
     private $apiUrl;
 
-    public function __construct($apiUrl, Client $guzzle)
+    public function __construct($apiUrl, Client $guzzle = null)
     {
-        $this->guzzle = $guzzle;
+        if($guzzle === null)
+        {
+            $this->guzzle = new Client();
+        } else {
+            $this->guzzle = $guzzle;
+        }
         $this->apiUrl = $apiUrl;
     }
 
